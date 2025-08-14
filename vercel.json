@@ -1,15 +1,16 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "**/*.html",
-      "use": "@vercel/static"
-    }
+   {
+    "src": "text.html",   
+    "use": "@vercel/static",
+    "config": { "includeFiles": ["text.html"] }
+   }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/text.html"
-    }
+   {
+    "src": "/(.*)",
+    "dest": "/text.html"
+   }
   ]
-}
+ }
