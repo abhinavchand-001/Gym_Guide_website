@@ -1,0 +1,160 @@
+@font-face {
+    font-family: jersey10_font;
+    src: url(fonts/jersey10.ttf);
+}
+@font-face {
+    font-family: babasneu;
+    src: url(fonts/babasneu.ttf);
+}
+@font-face {
+    font-family: mightysouly;
+    src: url(fonts/MightySouly.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    
+   
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(loginimages/loginimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    width: 400px;
+    height: 440px;
+    background-color: transparent;
+    padding: 60px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login form{
+    width: 100%;
+}
+
+.login h1{
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    height: 50px;
+    font-size: 2.5vw;
+    text-align: center;
+}
+.input_box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    
+}
+.input_box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.input_box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: 0.5s;
+    font-size: 1em;
+    padding: 0px 30px 0px 5px;
+    color: rgba(0, 0, 0, 0.773);
+    font-weight: 600px;
+}
+.input_box input:focus~label,
+.input_box input:valid~label{
+top: -5px;
+}
+.input_box span{
+    position: absolute;
+    right: 2px;
+}
+.input_box ion-icon{
+    font-size: 25px;
+}
+
+.remember_content{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    text-align: centre;
+}
+.remember_content label input{
+    color: rgba(0, 0, 0, 0.773);
+    margin-right: 10px;
+
+}
+.remember_content a{
+text-decoration: none;
+color: rgba(0, 0, 0, 0.773);
+
+}
+.remember_content a:hover {
+text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 5px;
+    font-family: babasneu;
+    border: none;
+    outline: none;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    background: #3B4B58;
+    color: antiquewhite;
+
+
+}
+.login_register{
+    width: 100%;
+    height: 50px;
+   text-align: center;
+    padding: 2px;
+    margin-top: 20px ;
+    font-size: 1em;
+    word-spacing: 2px;
+
+}
+.login_register p a{
+    text-decoration: none;
+    color: black;
+}
+.login_register p a:hover{
+text-decoration: underline;
+}
+

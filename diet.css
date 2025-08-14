@@ -1,0 +1,274 @@
+@font-face {
+    font-family: roboslab;
+    src: url(fonts/robotoslab.ttf);
+}
+@font-face {
+    font-family: bitechoco;
+    src: url(fonts/bitechoco.ttf);
+}
+@font-face {
+    font-family: jersey10_font;
+    src: url(fonts/jersey10.ttf);
+}
+@font-face {
+    font-family: babasneu;
+    src: url(fonts/babasneu.ttf);
+}
+@font-face {
+    font-family: mightysouly;
+    src: url(fonts/MightySouly.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+.heading{
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(237, 237, 237, 0.737);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.heading h1{
+    font-size: 3vw;
+    font-weight: 500;
+    /* margin-bottom: 5px; */
+    letter-spacing: 2px;
+    font-family: roboslab;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.611);
+
+}
+
+.heading h2{
+    font-size: 2.5vw;
+    font-weight: 1000;
+    color: green;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-shadow: 2px 2px 3px rgba(0, 128, 0, 0.659);
+    font-family: bitechoco;
+
+}
+.diet_image{
+    width: 100%;
+    min-height: 130vh;
+    background-image: url(dietimages/diethtml.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 80%;
+    min-height: 110vh;
+    background-color: rgb(237, 237, 237);
+    border-radius: 30px;
+    border: 1px solid grey;
+    
+}
+
+.content_header{
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    height: 20%;
+    color: #292D35;
+    background: linear-gradient(to bottom, rgba(28, 180, 28, 0.68) 0%, rgb(237, 237, 237) 50%);
+    font-size: 1.3rem;
+    font-weight: 100;
+    padding-top: 30px;
+    font-family: roboslab;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    overflow-x: hidden;
+
+}
+
+/* designig the menu div */
+
+.menu{
+    width: 100%;
+    min-height: 100%;
+    /* background-color: red; */
+}
+.menu_selection{
+    width: 100%;
+    height: 15%;
+    margin-top: 65px;
+    
+
+}
+.menu_selection ul{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    /* background-color: orange; */
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+
+} 
+.menu_selection li{
+    padding: 2px 10px 2px 10px;
+    color: #292D35;
+    border: 0.25px solid #292d35ba;
+    border-radius: 50px;
+    height: 50px;
+    width: 220px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s all ease;
+}
+
+.menu_selection li:focus,
+.menu_selection li:hover{
+    cursor: pointer;
+    color: transparent;
+    background: linear-gradient(to right,rgb(0, 140, 0), orangered);
+    -webkit-background-clip: text;
+    border: 1px solid green;
+    border-radius: 50px;
+}
+
+.menu .menu_section{
+    margin-top: 30px;
+    width: 100%;
+    height: 71.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+} 
+.menu_for_li1{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.menu_for_li2{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.menu_for_li3{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.menu_for_li1 .image_li1{
+    background-image: url(dietimages/li1_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 450px;
+    height: 375px;
+    
+
+}
+.menu_for_li2 .image_li2{
+    background-image: url(dietimages/li2_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 450px;
+    height: 375px;
+    
+
+}
+.menu_for_li3 .image_li3{
+    background-image: url(dietimages/li3_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 450px;
+    height: 375px;
+    
+
+}
+.menu_for_li1_content{
+    height: 375px;
+    width: 575px;
+    background: linear-gradient(to left, rgb(28, 180, 28) 0%, rgb(237, 237, 237) 50%);
+    border-radius: 20px;
+    margin-left: 2vw;
+}
+.menu_for_li1_content h1{
+    font-size: 2vw;
+    font-weight: bold;
+    word-spacing: 2px;
+    font-family: sans-serif;
+    color: #292D35;
+}
+
+.menu_for_li1_content p{
+    margin-top: 30px;
+    font-weight: 100;
+    font-size: 1.1vw;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.menu_for_li1_content .btn_1{
+    all: unset;
+    width: 12vw;
+    height: 8.5vh;
+    margin-top: 4vw;
+    margin-left: 3vw;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: rgba(255, 0, 0, 0.823);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s all ease ;
+    
+}
+
+.menu_for_li1_content .btn_1:hover{
+    background: rgb(60, 62, 76);
+    color: whitesmoke;
+
+}

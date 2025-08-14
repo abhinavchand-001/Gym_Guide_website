@@ -1,0 +1,288 @@
+@font-face {
+    font-family: jersey10_font;
+    src: url(fonts/jersey10.ttf);
+}
+@font-face {
+    font-family: babasneu;
+    src: url(fonts/babasneu.ttf);
+}
+@font-face {
+    font-family: mightysouly;
+    src: url(fonts/MightySouly.ttf);
+}
+@font-face {
+    font-family: ubuntu_regular;
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: ubuntu_bold;
+    src: url(fonts/Ubuntu-Bold.ttf);
+}
+body{
+    scroll-behavior: smooth;
+    transition: 0.5s all ease-in-out;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    transform-style: preserve-3d;
+    background: linear-gradient(to right, rgb(31, 31, 44) 0% , rgb(148, 161, 188) 50%);
+    position: relative;
+}
+.heading{
+    position: absolute;
+    z-index: 1;
+    top: -40vh;
+    left: 15%;
+    border-radius: 50%;
+    width: 70%;
+    height: 70vh;
+    background-color: rgb(31, 31, 44);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.heading h1{
+    font-size: 3vw;
+    letter-spacing: 2px;
+    font-family: ubuntu_regular;
+    padding-bottom: 10px;
+    margin-bottom: 15vh;
+}
+
+.introduction{
+    width: 80%;
+    height: 100vh;
+    margin-left: 10%;
+    background-image: url(equipmentimages/introimage.jpg);
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+
+.disclaimer{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.disclaimer p{
+    position: absolute;
+    top: 10vh;
+    width: 50%;
+    text-align: center;
+    text-shadow: 0px 0px 2px rgb(31, 31, 44);
+    font-size: 2vw;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: ubuntu_bold;
+    color: rgb(31, 31, 44);
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.disclaimer h2{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    max-width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(123, 57, 57);
+    font-size: 4.5vw;
+    font-weight: 800;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: rgb(255, 242, 242);
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    font-family: babasneu;
+
+}
+.equipments{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(31, 31, 44);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.image_container{
+    width: 30vw;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-right: -60px;
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+.content{
+    width: 45vw;
+    min-height: 80vh;
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    
+}
+
+.content h1{
+    color: white;
+    font-family: ubuntu_bold;
+    font-weight: 600;
+
+}
+.content p{
+    font-size: 1.1rem;
+    word-spacing: 1.5px;
+    color: rgb(199, 228, 253);
+    margin-top: 10px;
+    font-family: ubuntu_regular;
+
+}
+
+.content h2{
+    font-family: ubuntu_bold;
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(199, 52, 52);
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.content ol{
+    margin-top: 10px;
+    margin-left: 25px;
+    color: rgb(199, 228, 253);
+}
+.content ol li{
+    margin-bottom: 13px;
+    font-size: 1.3rem;
+}
+.equipments2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+.equipments2 .image_container{
+    width: 30vw;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-right: 60px;
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+.equipments2 .content h1{
+    color: rgb(31, 31, 44);
+    font-family: ubuntu_bold;
+    font-weight: 600;
+
+}
+.equipments2 .content p{
+    font-size: 1.1rem;
+    word-spacing: 1.5px;
+    color: rgb(31, 31, 44);
+    margin-top: 10px;
+    font-family: ubuntu_regular;
+
+}
+
+.equipments2 .content h2{
+    font-family: ubuntu_bold;
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(199, 52, 52);
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.equipments2 .content ol{
+    margin-top: 10px;
+    margin-left: 25px;
+    color: rgb(31, 31, 44);
+}
+.equipments2 .content ol li{
+    margin-bottom: 13px;
+    font-size: 1.3rem;
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+        
+         
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        
+    }
+}
+
+
+@keyframes appear2 {
+    from{
+        opacity: 0;
+      transform: translateX(-50%);
+      scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+        scale: 1;
+
+    }
+}
+@keyframes appear3 {
+    from{
+        opacity: 0;
+      transform: translateX(50%);
+      scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+        scale: 1;
+
+    }
+}

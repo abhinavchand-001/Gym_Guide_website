@@ -1,0 +1,225 @@
+@font-face {
+    font-family: rubica_font;
+    src: url(fonts/RubicaPersonalUseOnly-0vaqo.otf);
+  }
+
+  @font-face {
+    font-family: space_grotesk;
+    src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: league_sport;
+    src: url(fonts/league-sport.otf);
+  }
+  @font-face {
+    font-family: jersey10_font;
+    src: url(fonts/jersey10.ttf);
+  }
+  @font-face {
+    font-family: babasneu;
+    src: url(fonts/babasneu.ttf);
+  }
+  @font-face {
+    font-family: mightysouly;
+    src: url(fonts/MightySouly.ttf);
+  }
+  @font-face {
+    font-family: roboslab;
+    src: url(fonts/robotoslab.ttf);
+  }
+  @font-face {
+    font-family: bitechoco;
+    src: url(fonts/bitechoco.ttf);
+  }
+  @font-face {
+    font-family: ubuntu_regular;
+    src: url(fonts/Ubuntu-Regular.ttf);
+  }
+  @font-face {
+    font-family: ubuntu_bold;
+    src: url(fonts/Ubuntu-Bold.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    width: 100%;
+    min-height: 100vh;
+    /* overflow-y: auto; */
+    overflow-x: hidden;
+
+
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: url(workoutimages/gym-weights-under-strong-dramatic-600nw-472696720.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.heading{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-weight: 1000;
+    font-family: roboslab;
+    color: rgb(178, 224, 224);
+}
+.content{
+
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s all ease-out;
+
+}
+
+.content a{
+    text-decoration: none;
+    width: 100%;
+    height: 20vh;
+}
+
+.content h1{
+    /* margin-top: 1em; */
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-family: roboslab;
+    color: rgb(178, 224, 224);
+    border-top: 1px solid rgb(178, 224, 224);
+    border-bottom: 1px solid rgb(178, 224, 224);
+    overflow: hidden;
+}
+.content h1::before{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #197de1;
+    transition: 0.25s all ease-out;
+
+}
+.content h1:hover{
+    color: rgb(226, 255, 255);
+}
+.content h1:hover::before{
+    top: 0;
+}
+
+.beginner_content{
+    position: absolute;
+    /* display: none; */
+    overflow: visible;
+    z-index: 3;
+    top: -200%;
+    left: 0;
+   width: 100%;
+   height: 200%;
+   background-color: #131313;
+   transition: 0.5s all ease-out;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+}
+  
+h1{
+  margin: 0.25em;
+  padding: 1em;
+  color: rgb(182, 254, 255);
+  font-size: 3em;
+  letter-spacing: 5px;
+  font-family: ubuntu_bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.days{
+  margin-left: 4em;
+  border-right: 1px solid rgb(236, 225, 206);
+}
+
+.days ul li{
+  text-align: center;
+  padding: 1em;
+  list-style: none;
+  color: rgb(236, 225, 206);
+  font-size: 2.25em;
+  letter-spacing: 5px;
+  font-family: rubica_font;
+  font-weight: 500;
+  transition: 0.25s all linear;
+
+}
+.days ul li:hover{
+  color: rgb(255, 251, 244);
+  scale: 1.2;
+  
+
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    transition: 0.25s all ease-in;
+}
+button:hover{
+    box-shadow: 0px 1px 5px white;
+}
+button:hover ion-icon{
+  transform: rotate(90deg);
+}
+
+button ion-icon{
+  color: white;
+  transition: 0.15s linear;
+    font-size: 3.5em;
+    font-weight: 100;
+}
+.Intermediate_content{
+    position: absolute;
+    z-index: 2;
+    top: 200%;
+    left: 0;
+   width: 100%;
+   height: 200%;
+   /* background-color: #0D0D0D; */
+   background-color: rgb(0, 59, 59);
+   transition: 0.5s all ease-out;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+}
