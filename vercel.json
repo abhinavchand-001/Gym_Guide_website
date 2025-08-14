@@ -1,16 +1,19 @@
 {
   "version": 2,
   "builds": [
-   {
-    "src": "text.html",   
-    "use": "@vercel/static",
-    "config": { "includeFiles": ["text.html"] }
-   }
+    {
+      "src": "**/*.{html,css,js,png,jpg,jpeg,svg,ico}",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
-   {
-    "src": "/(.*)",
-    "dest": "/text.html"
-   }
+    {
+      "src": "/(.*)",
+      "dest": "/text.html"
+    },
+    {
+      "src": "/(.*\\.(?:css|js|png|jpg|jpeg|svg|ico))",
+      "dest": "/$1"
+    }
   ]
- }
+}

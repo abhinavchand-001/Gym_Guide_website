@@ -1,9 +1,4 @@
 
-
-
-
-
-
 let imgchange = (e) => {
     document.querySelector('.big_image').style.backgroundImage = `url(${e})`;
 }
