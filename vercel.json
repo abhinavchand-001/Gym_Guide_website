@@ -9,11 +9,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/Gym_Guide_website/text.html"
+      "dest": "/text.html"
     },
     {
       "src": "/(.*\\.(?:css|js|png|jpg|jpeg|svg|ico))",
-      "dest": "/Gym_Guide_website/$1"
+      "dest": "/$1"
     }
   ]
 }
